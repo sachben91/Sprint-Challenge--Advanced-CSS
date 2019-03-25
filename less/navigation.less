@@ -1,1 +1,30 @@
 // Navigation code here
+nav{
+  background-color: @nav-bg;
+  .flex-mixin(center, center, column);
+  border-bottom: 1px ridge @nav-border;
+  padding-bottom: 5px;
+  padding-top: 10px;
+  ul{
+    .flex-mixin(space-between, center, row);
+  }
+  li{
+    padding: 10px;
+  }
+  a{
+    text-decoration: none;
+    color: @nav-font;
+  }
+  h1{
+    padding-bottom: 5px;
+  }
+}
+.sticky {
+ position: fixed;
+ top: 0;
+ width: 100%;
+ background-color: darken(@nav-bg, 20%);
+ }
+ .sticky + .container {
+  padding-top: 200px;
+}

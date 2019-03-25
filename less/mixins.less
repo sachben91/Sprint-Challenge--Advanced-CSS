@@ -1,1 +1,37 @@
 // Mixins Here
+.flex-mixin(@justify, @align, @direction)
+{
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
+  flex-direction: @direction;
+}
+.sign-up-btn(@font-size, @btnradius)
+{
+  background-color: @btn-bg-color;
+  border-radius: @btnradius;
+  padding: 15px 20px;
+  margin: 4px 2px;
+  text-align: center;
+  font-size: @font-size;
+  cursor: pointer;
+  color: white;
+
+}
+
+.hover-btn{
+  background-color: white;
+  color: @btn-bg-color;
+  border: 0.5px solid @btn-bg-color;
+}
+.sub-button(@subfont-size, @subradius)
+{
+  background-color: gray;
+  border-radius: @subradius;
+  padding: 10px 10px;
+  margin: 4px 2px;
+  text-align: center;
+  font-size: @subfont-size;
+  cursor: pointer;
+  color: white;
+}
