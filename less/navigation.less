@@ -19,3 +19,12 @@ nav{
     padding-bottom: 5px;
   }
 }
+.sticky {
+ position: fixed;
+ top: 0;
+ width: 100%;
+ background-color: darken(@nav-bg, 20%);
+ }
+ .sticky + .container {
+  padding-top: 200px;
+}

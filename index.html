@@ -18,7 +18,7 @@
 <body>
 
  <!-- navigation code here -->
- <nav>
+ <nav id="navbar">
    <h1>SpaceWalkers</h1>
    <ul>
      <li><a href="#">Home</a></li>
@@ -75,9 +75,36 @@
     </section>
 
     <footer>
+      <form action="action_page.php">
+      <div class="form">
+        <p>Subscribe to our Newsletter</p>
+      </div>
+
+      <div class="form" style="background-color:white">
+        <input type="text" placeholder="Email address" name="mail" required>
+      </div>
+
+      <div class="form">
+        <input type="submit" value="Subscribe">
+      </div>
+    </form>
       <p>Copyright SpaceWalkers 2018</p>
     </footer>
 
   </div>
+  <script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
 </body>
 </html>
