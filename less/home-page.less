@@ -1,6 +1,12 @@
 // Home Content
 
 .home {
+  .header-img{
+    @media @mobile{
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
 
   .intro {
 
@@ -11,7 +17,7 @@
     p {
       padding:0 15px;
     }
-  
+
   }
 
   .space-images {
@@ -24,6 +30,17 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+    @media @mobile{
+      .blast{
+        width: 100%;
+      }
+      .launch{
+        display: none;
+      }
+      .sky{
+        display: none;
+      }
     }
   }
 
@@ -58,18 +75,41 @@
       }
 
       .btn {
+        .sign-up-btn(1.6rem,4px);
+      }
+      .btn:hover{
+        .hover-btn;
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
       }
     }
+    @media @mobile{
+      display: flex;
+      flex-wrap: wrap-reverse;
+      max-width: 500px;
+      width: 100%;
+      padding: 15px;
+      .walk-img{
+        max-width: 500px;
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 20px;
+        }
+      .walk-text{
+        max-width: 500px;
+        width: 100%;}
+        }
+    }
+  @media @mobile{
+    max-width: 500px;
   }
 }// home
